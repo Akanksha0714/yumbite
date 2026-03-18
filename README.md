@@ -1,27 +1,108 @@
-# FoodOrderingUi
+# 🍔 Yumbite - Food Ordering System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+A full-stack Food Ordering System built using **Angular (Frontend)** and **ASP.NET Core Web API (Backend)**.
+This application allows users to browse food items, add to cart, place orders, and make payments seamlessly.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Features
 
-## Code scaffolding
+### 👤 User Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* User Registration & Login
+* Browse Food Menu
+* Add to Cart
+* Update / Remove Cart Items
+* Place Order
+* Payment Integration (QR / Dummy)
+* Order History
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 🛠️ Admin Features (Backend)
 
-## Running unit tests
+* Manage Food Items
+* Manage Orders
+* API-based Architecture
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 🧰 Tech Stack
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Frontend:
 
-## Further help
+* Angular
+* TypeScript
+* HTML / CSS
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Backend:
+
+* ASP.NET Core Web API
+* Entity Framework Core
+* SQL Server
+
+---
+
+## 📁 Project Structure
+
+```
+yumbite/
+ ├── src/        # Angular Frontend
+ └── backend/    # ASP.NET Core Backend
+```
+
+---
+
+## ⚙️ How to Run the Project
+
+### 🔹 Frontend (Angular)
+
+```bash
+cd food-ordering-ui
+npm install
+ng serve
+```
+
+👉 Runs on: `http://localhost:4200`
+
+---
+
+### 🔹 Backend (.NET API)
+
+```bash
+cd backend/FoodOrderingAPI
+dotnet run
+```
+
+👉 Runs on: `https://localhost:5001` (or configured port)
+
+---
+
+## 🔗 API Integration
+
+* Frontend communicates with backend using REST APIs
+* Handles authentication, cart, and order processing
+
+---
+
+## 💡 Highlights
+
+* Clean UI with responsive design
+* Modular Angular architecture
+* Secure API handling with .NET
+* Real-world project structure
+
+---
+
+## 👩‍💻 Author
+
+**Akanksha Samdole**
+GitHub: https://github.com/Akanksha0714
+
+---
+
+## ⭐ If you like this project
+
+Give it a ⭐ on GitHub!
+
+---
