@@ -1,0 +1,95 @@
+.menu-container {
+  padding: 20px;
+}
+
+/* IMAGE FULL WIDTH FIX */
+.food-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;  /* 🔥 FULL image disel */
+  background: #fff;     /* empty space clean disel */
+  border-radius: 10px;
+}
+/* CARD */
+.food-card {
+  padding: 15px;
+  border-radius: 15px;
+  background: #fff5f2;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: relative; /* 🔥 important for button */
+}
+
+/* REMOVE EXTRA WHITE GAP */
+.food-card img {
+  display: block;
+}
+
+/* TEXT CENTER */
+.food-card h3,
+.food-card p {
+  text-align: center;
+}
+
+/* 🔥 ADD BUTTON RIGHT SIDE (CIRCLE) */
+.add-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background: #ff4b2b;
+  color: white;
+  border: none;
+
+  font-size: 20px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HOVER */
+.add-btn:hover {
+  background: #ff2e00;
+}
+
+/* GAP FIX */
+.food-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* 🔥 CARD HOVER */
+.food-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-8px); /* thoda upar */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* 🔥 IMAGE HOVER (zoom effect) */
+.food-card:hover .food-img {
+  transform: scale(1.05);
+}
+
+.food-img {
+  transition: transform 0.3s ease;
+}
+
+/* 🔥 BUTTON HOVER */
+.add-btn:hover {
+  background: #ff2e00;
+  transform: scale(1.1);
+}
+
+
+.food-card {
+  overflow: hidden; /* MUST */
+}

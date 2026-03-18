@@ -1,0 +1,25 @@
+<nav class="navbar">
+
+ <h2 class="logo">YumBites 🍔</h2>
+
+  <div class="nav-links">
+
+  
+    <a routerLink="/home">Home</a>
+    <a routerLink="/menu">Menu</a>
+
+    
+    <a routerLink="/cart" *ngIf="isLoggedIn">Cart</a>
+    <a routerLink="/orders" *ngIf="isLoggedIn">Orders</a>
+
+    <span class="welcome" *ngIf="isLoggedIn">
+      Welcome {{username}}
+    </span>
+
+    <button class="logout-btn" *ngIf="isLoggedIn" (click)="logout()">
+      Logout
+    </button>
+
+  </div>
+
+</nav>

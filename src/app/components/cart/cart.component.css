@@ -1,0 +1,89 @@
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+
+.cart-container {
+  width: 100% !important;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.cart-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 20px !important;
+}
+
+.cart-card {
+  display: flex !important;
+  flex-direction: column !important;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+
+.food-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.cart-info {
+  text-align: center;
+}
+
+
+.price {
+  color: #ff4b2b;
+  font-weight: bold;
+}
+
+.qty {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.qty button {
+  background: #ff4b2b;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+
+.checkout {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-btn {
+  background: #ff4b2b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}

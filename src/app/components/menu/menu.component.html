@@ -1,0 +1,23 @@
+<div class="menu-container">
+
+  <h2>Inspiration for your orders ✨</h2>
+
+  <div class="food-list">
+
+    <div class="food-card" *ngFor="let item of foods">
+
+      <img [src]="item.image" class="food-img">
+
+      <h3>{{item.name}}</h3>
+
+      <p>⭐ {{item.rating}} • 30 mins</p>
+
+      <p class="price">₹{{item.price}}</p>
+
+      <button class="add-btn" (click)="addToCart(item)">+</button>
+
+    </div>
+
+  </div>
+
+</div>

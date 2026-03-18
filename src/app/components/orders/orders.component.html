@@ -1,0 +1,28 @@
+<div class="orders-container">
+
+  <h2>My Orders</h2>
+
+  <div class="order-card" *ngFor="let order of orders">
+
+    <div class="order-content">
+
+     
+      <img [src]="order.foodImage || 'assets/images/default.png'" class="order-img">
+
+      <div class="order-details">
+
+        <h3>{{order.foodName}}</h3>
+
+        <p>Order ID: {{order.orderId}}</p>
+
+        <p>Status: {{order.status}}</p>
+
+        <p>Total Amount: ₹{{order.totalAmount}}</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
